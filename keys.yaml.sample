@@ -1,5 +1,5 @@
 test1:
-  key: q6qdbvydm3banpilmbmzzochyay8lqae
+  key: o5sw4ylqmvzhe33dn5ww65tb
 test2:
   key: JBSWY3DPEHPK3PXP
   t0: 30  # This causes the generated token to be delayed by 30 seconds
