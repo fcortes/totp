@@ -35,10 +35,7 @@ class Totp(object):
         n[0] &= 0x7F  # Discard most significant bit
         res = str(int.from_bytes(n, byteorder='big', signed=False))
 
-        if len(res) < self.length:
-            return '{{:0>{}}}'.format(self.length).format(res)
-        else:
-            return res[-self.length:]
+        return '{{:0>{}}}'.format(self.length).format(res[-self.length:])
 
     def now(self):
         '''
